@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Rocket, Shield, Headphones, TrendingUp } from "lucide-react";
 import { DIFFERENTIALS } from "@/lib/constants";
@@ -17,7 +18,7 @@ export function DifferentialsSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-[#F5C518] font-semibold text-sm tracking-widest uppercase">
+            <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
               Por que Weblooks?
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A0A0A] dark:text-white leading-tight">
@@ -29,14 +30,20 @@ export function DifferentialsSection() {
               com o sucesso do seu projeto, do primeiro commit ao deploy final.
             </p>
 
-            <div className="mt-10 p-6 bg-[#F5C518]/5 border border-[#F5C518]/20 rounded-2xl">
+            <div className="mt-10 p-6 bg-[#00E676]/5 border border-[#00E676]/20 rounded-2xl">
               <blockquote className="text-[#0A0A0A] dark:text-white font-medium text-lg italic leading-relaxed">
                 &ldquo;Código limpo, entrega rápida e suporte de verdade. É assim
                 que construímos relacionamentos duradouros.&rdquo;
               </blockquote>
               <footer className="mt-4 flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#F5C518] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold text-sm">
-                  BP
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#00E676]/40 flex-shrink-0">
+                  <Image
+                    src="/berg-pinheiro.png"
+                    alt="Berg Pinheiro"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#0A0A0A] dark:text-white">Berg Pinheiro</p>
@@ -64,8 +71,8 @@ export function DifferentialsSection() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="bg-gray-50 dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-2xl p-6"
                 >
-                  <div className="w-11 h-11 bg-[#F5C518]/10 rounded-xl flex items-center justify-center mb-4">
-                    <Icon size={20} className="text-[#F5C518]" />
+                  <div className="w-11 h-11 bg-[#00E676]/10 rounded-xl flex items-center justify-center mb-4">
+                    <Icon size={20} className="text-[#00E676]" />
                   </div>
                   <h3 className="font-bold text-[#0A0A0A] dark:text-white mb-2">
                     {item.title}

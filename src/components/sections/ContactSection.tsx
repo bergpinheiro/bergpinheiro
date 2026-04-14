@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   MessageCircle,
@@ -39,7 +40,7 @@ export function ContactSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-[#F5C518] font-semibold text-sm tracking-widest uppercase">
+          <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
             Entre em contato
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-[#0A0A0A] dark:text-white">
@@ -71,28 +72,28 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold mb-1">WhatsApp (mais rápido)</p>
                   <p className="text-gray-400 text-sm mb-2">+55 85 99120-3123</p>
-                  <span className="inline-flex items-center gap-1 text-[#F5C518] text-sm font-medium group-hover:gap-2 transition-all">
+                  <span className="inline-flex items-center gap-1 text-[#00E676] text-sm font-medium group-hover:gap-2 transition-all">
                     Enviar mensagem <ArrowRight size={14} />
                   </span>
                 </div>
               </a>
 
               <a
-                href="mailto:contato@weblooks.com.br"
+                href="mailto:lindenberg@weblooks.com.br"
                 className="flex items-start gap-4 mb-6"
               >
-                <div className="w-12 h-12 bg-[#F5C518]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Mail size={22} className="text-[#F5C518]" />
+                <div className="w-12 h-12 bg-[#00E676]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Mail size={22} className="text-[#00E676]" />
                 </div>
                 <div>
                   <p className="font-semibold mb-1">Email</p>
-                  <p className="text-gray-400 text-sm">contato@weblooks.com.br</p>
+                  <p className="text-gray-400 text-sm">lindenberg@weblooks.com.br</p>
                 </div>
               </a>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#F5C518]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin size={22} className="text-[#F5C518]" />
+                <div className="w-12 h-12 bg-[#00E676]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin size={22} className="text-[#00E676]" />
                 </div>
                 <div>
                   <p className="font-semibold mb-1">Localização</p>
@@ -102,10 +103,16 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="bg-[#F5C518]/5 border border-[#F5C518]/20 rounded-2xl p-6">
+            <div className="bg-[#00E676]/5 border border-[#00E676]/20 rounded-2xl p-6">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-[#F5C518] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold text-sm">
-                  BP
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#00E676]/40 flex-shrink-0">
+                  <Image
+                    src="/berg-pinheiro.png"
+                    alt="Berg Pinheiro"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div>
                   <p className="font-bold text-[#0A0A0A] dark:text-white text-sm">Berg Pinheiro</p>
@@ -142,7 +149,7 @@ export function ContactSection() {
                       setSubmitted(false);
                       setFormState({ name: "", email: "", phone: "", message: "" });
                     }}
-                    className="mt-6 text-[#F5C518] text-sm font-medium hover:underline"
+                    className="mt-6 text-[#00E676] text-sm font-medium hover:underline"
                   >
                     Enviar outra mensagem
                   </button>
@@ -162,7 +169,7 @@ export function ContactSection() {
                           setFormState({ ...formState, name: e.target.value })
                         }
                         placeholder="Seu nome completo"
-                        className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#F5C518] focus:ring-1 focus:ring-[#F5C518] transition-colors"
+                        className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors"
                       />
                     </div>
                     <div>
@@ -177,7 +184,7 @@ export function ContactSection() {
                           setFormState({ ...formState, email: e.target.value })
                         }
                         placeholder="seu@email.com"
-                        className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#F5C518] focus:ring-1 focus:ring-[#F5C518] transition-colors"
+                        className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors"
                       />
                     </div>
                   </div>
@@ -193,7 +200,7 @@ export function ContactSection() {
                         setFormState({ ...formState, phone: e.target.value })
                       }
                       placeholder="+55 85 99999-9999"
-                      className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#F5C518] focus:ring-1 focus:ring-[#F5C518] transition-colors"
+                      className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors"
                     />
                   </div>
 
@@ -209,13 +216,13 @@ export function ContactSection() {
                         setFormState({ ...formState, message: e.target.value })
                       }
                       placeholder="Conte sobre seu projeto ou necessidade..."
-                      className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#F5C518] focus:ring-1 focus:ring-[#F5C518] transition-colors resize-none"
+                      className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full group flex items-center justify-center gap-2 bg-[#F5C518] hover:bg-[#D4A017] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-95"
+                    className="w-full group flex items-center justify-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-95"
                   >
                     Enviar pelo WhatsApp
                     <Send

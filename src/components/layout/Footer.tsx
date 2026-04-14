@@ -55,7 +55,7 @@ export function Footer() {
                 href="https://github.com/bergpinheiro"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-[#F5C518] transition-colors"
+                className="text-gray-500 hover:text-[#00E676] transition-colors"
                 aria-label="GitHub"
               >
                 <GithubIcon />
@@ -64,7 +64,7 @@ export function Footer() {
                 href="https://linkedin.com/in/bergpinheiro"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-[#F5C518] transition-colors"
+                className="text-gray-500 hover:text-[#00E676] transition-colors"
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon />
@@ -73,14 +73,14 @@ export function Footer() {
                 href="https://instagram.com/weblooks"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-[#F5C518] transition-colors"
+                className="text-gray-500 hover:text-[#00E676] transition-colors"
                 aria-label="Instagram"
               >
                 <InstagramIcon />
               </a>
               <a
-                href="mailto:contato@weblooks.com.br"
-                className="text-gray-500 hover:text-[#F5C518] transition-colors"
+                href="mailto:lindenberg@weblooks.com.br"
+                className="text-gray-500 hover:text-[#00E676] transition-colors"
                 aria-label="Email"
               >
                 <Mail size={18} />
@@ -95,7 +95,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-[#F5C518] transition-colors"
+                    className="text-sm text-gray-400 hover:text-[#00E676] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -113,7 +113,7 @@ export function Footer() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#F5C518] transition-colors"
+                  className="hover:text-[#00E676] transition-colors"
                 >
                   +55 85 99120-3123
                 </a>
@@ -121,10 +121,10 @@ export function Footer() {
               <li className="text-sm">
                 <span className="block text-gray-500 text-xs mb-1">Email</span>
                 <a
-                  href="mailto:contato@weblooks.com.br"
-                  className="hover:text-[#F5C518] transition-colors"
+                  href="mailto:lindenberg@weblooks.com.br"
+                  className="hover:text-[#00E676] transition-colors"
                 >
-                  contato@weblooks.com.br
+                  lindenberg@weblooks.com.br
                 </a>
               </li>
               <li className="text-sm">
@@ -141,7 +141,7 @@ export function Footer() {
           </p>
           <p className="text-xs text-gray-600">
             Feito com{" "}
-            <span className="text-[#F5C518]">♥</span>
+            <span className="text-[#00E676]">♥</span>
             {" "}por Berg Pinheiro
           </p>
         </div>

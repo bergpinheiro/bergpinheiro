@@ -14,7 +14,7 @@ export function AboutHero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-[#F5C518] font-semibold text-sm tracking-widest uppercase">
+            <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
               Sobre a Weblooks
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-[#0A0A0A] dark:text-white leading-tight">
@@ -42,7 +42,7 @@ export function AboutHero() {
                   key={text}
                   className="flex items-center gap-2 bg-gray-50 dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-full px-4 py-2"
                 >
-                  <Icon size={14} className="text-[#F5C518]" />
+                  <Icon size={14} className="text-[#00E676]" />
                   <span className="text-sm text-gray-600 dark:text-gray-400">{text}</span>
                 </div>
               ))}
@@ -55,7 +55,7 @@ export function AboutHero() {
             transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#F5C518]/10 to-transparent">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#00E676]/10 to-transparent">
               <Image
                 src="/berg-pinheiro.png"
                 alt="Berg Pinheiro — Fundador da Weblooks"
@@ -69,8 +69,14 @@ export function AboutHero() {
 
             <div className="absolute -bottom-4 -left-4 bg-white dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-xl">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-[#F5C518] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold">
-                  BP
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#00E676]/50 flex-shrink-0">
+                  <Image
+                    src="/berg-pinheiro.png"
+                    alt="Berg Pinheiro"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div>
                   <p className="font-bold text-[#0A0A0A] dark:text-white text-sm">Berg Pinheiro</p>

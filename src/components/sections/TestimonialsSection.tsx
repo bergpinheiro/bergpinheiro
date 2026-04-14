@@ -15,7 +15,7 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-[#F5C518] font-semibold text-sm tracking-widest uppercase">
+          <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
             Depoimentos
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A0A0A] dark:text-white">
@@ -39,7 +39,7 @@ export function TestimonialsSection() {
                   <Star
                     key={j}
                     size={14}
-                    className="fill-[#F5C518] text-[#F5C518]"
+                    className="fill-[#00E676] text-[#00E676]"
                   />
                 ))}
               </div>
@@ -49,7 +49,7 @@ export function TestimonialsSection() {
               </p>
 
               <div className="flex items-center gap-3 mt-6 pt-6 border-t border-gray-100 dark:border-gray-800">
-                <div className="w-10 h-10 bg-[#F5C518] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold text-xs flex-shrink-0">
+                <div className="w-10 h-10 bg-[#00E676] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold text-xs flex-shrink-0">
                   {testimonial.avatar}
                 </div>
                 <div>

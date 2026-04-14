@@ -20,8 +20,8 @@ export function HeroSection() {
       <div className="absolute inset-0 hero-gradient pointer-events-none" />
 
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#F5C518]/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#F5C518]/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#00E676]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#00E676]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
@@ -33,9 +33,9 @@ export function HeroSection() {
           <motion.span
             variants={fadeUp}
             custom={0.1}
-            className="inline-flex items-center gap-2 bg-[#F5C518]/10 border border-[#F5C518]/20 text-[#D4A017] dark:text-[#F5C518] text-xs font-semibold px-4 py-2 rounded-full mb-8 tracking-wide uppercase"
+            className="inline-flex items-center gap-2 bg-[#00E676]/10 border border-[#00E676]/20 text-[#00C853] dark:text-[#00E676] text-xs font-semibold px-4 py-2 rounded-full mb-8 tracking-wide uppercase"
           >
-            <span className="w-1.5 h-1.5 bg-[#F5C518] rounded-full animate-pulse" />
+            <span className="w-1.5 h-1.5 bg-[#00E676] rounded-full animate-pulse" />
             Soluções Digitais de Alto Impacto
           </motion.span>
 
@@ -68,7 +68,7 @@ export function HeroSection() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 bg-[#F5C518] hover:bg-[#D4A017] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 active:scale-95 shadow-lg shadow-yellow-500/20"
+              className="group inline-flex items-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 active:scale-95 shadow-lg shadow-yellow-500/20"
             >
               Falar no WhatsApp
               <ArrowRight
@@ -112,7 +112,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400 hover:text-[#F5C518] transition-colors"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400 hover:text-[#00E676] transition-colors"
         aria-label="Scroll para baixo"
       >
         <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>

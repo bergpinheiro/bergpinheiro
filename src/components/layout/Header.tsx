@@ -39,9 +39,9 @@ export function Header() {
             <Image
               src="/weblooks-logo.png"
               alt="Weblooks"
-              width={140}
-              height={40}
-              className="h-8 w-auto object-contain"
+              width={180}
+              height={52}
+              className="h-11 w-auto object-contain"
               priority
             />
           </Link>
@@ -52,9 +52,9 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors duration-200 hover:text-[#F5C518]",
+                  "text-sm font-medium transition-colors duration-200 hover:text-[#00E676]",
                   pathname === link.href
-                    ? "text-[#F5C518]"
+                    ? "text-[#00E676]"
                     : "text-gray-700 dark:text-gray-300"
                 )}
               >
@@ -68,7 +68,7 @@ export function Header() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F5C518] hover:bg-[#D4A017] text-[#0A0A0A] font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
             >
               Falar no WhatsApp
             </a>
@@ -101,7 +101,7 @@ export function Header() {
                   className={cn(
                     "px-4 py-3 rounded-lg text-sm font-medium transition-colors",
                     pathname === link.href
-                      ? "bg-[#F5C518]/10 text-[#F5C518]"
+                      ? "bg-[#00E676]/10 text-[#00E676]"
                       : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
                   )}
                 >
@@ -112,7 +112,7 @@ export function Header() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 flex items-center justify-center bg-[#F5C518] text-[#0A0A0A] font-semibold text-sm px-5 py-3 rounded-full transition-colors"
+                className="mt-3 flex items-center justify-center bg-[#00E676] text-[#0A0A0A] font-semibold text-sm px-5 py-3 rounded-full transition-colors"
               >
                 Falar no WhatsApp
               </a>

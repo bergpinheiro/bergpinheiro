@@ -28,7 +28,7 @@ export function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-[#F5C518] font-semibold text-sm tracking-widest uppercase">
+          <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
             O que fazemos
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A0A0A] dark:text-white">
@@ -57,8 +57,8 @@ export function ServicesSection() {
                 className="group relative bg-white dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-2xl p-8 card-hover"
               >
                 <div className="flex items-start gap-5">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#F5C518]/10 rounded-xl flex items-center justify-center group-hover:bg-[#F5C518]/20 transition-colors">
-                    <Icon size={22} className="text-[#F5C518]" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#00E676]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00E676]/20 transition-colors">
+                    <Icon size={22} className="text-[#00E676]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-bold text-[#0A0A0A] dark:text-white mb-2">
@@ -93,7 +93,7 @@ export function ServicesSection() {
         >
           <Link
             href="/servicos"
-            className="inline-flex items-center gap-2 text-[#F5C518] font-semibold hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#00E676] font-semibold hover:gap-3 transition-all"
           >
             Ver todos os serviços <ArrowRight size={16} />
           </Link>

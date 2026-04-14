@@ -96,7 +96,7 @@ export function ServicesDetailSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-[#F5C518] font-semibold text-sm tracking-widest uppercase">
+          <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
             Nossos serviços
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-[#0A0A0A] dark:text-white">
@@ -122,7 +122,7 @@ export function ServicesDetailSection() {
                 className="relative bg-gray-50 dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-3xl p-8 lg:p-10"
               >
                 {service.highlight && (
-                  <span className="absolute top-6 right-6 bg-[#F5C518] text-[#0A0A0A] text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="absolute top-6 right-6 bg-[#00E676] text-[#0A0A0A] text-xs font-bold px-3 py-1 rounded-full">
                     {service.highlight}
                   </span>
                 )}
@@ -130,8 +130,8 @@ export function ServicesDetailSection() {
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                   <div>
                     <div className="flex items-center gap-4 mb-5">
-                      <div className="w-14 h-14 bg-[#F5C518]/10 rounded-2xl flex items-center justify-center">
-                        <Icon size={26} className="text-[#F5C518]" />
+                      <div className="w-14 h-14 bg-[#00E676]/10 rounded-2xl flex items-center justify-center">
+                        <Icon size={26} className="text-[#00E676]" />
                       </div>
                       <h2 className="text-xl lg:text-2xl font-bold text-[#0A0A0A] dark:text-white">
                         {service.title}
@@ -144,7 +144,7 @@ export function ServicesDetailSection() {
                       href={WHATSAPP_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[#F5C518] hover:bg-[#D4A017] text-[#0A0A0A] font-semibold text-sm px-6 py-3 rounded-full transition-all hover:scale-105 active:scale-95 group"
+                      className="inline-flex items-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-semibold text-sm px-6 py-3 rounded-full transition-all hover:scale-105 active:scale-95 group"
                     >
                       Solicitar este serviço
                       <ArrowRight
@@ -159,7 +159,7 @@ export function ServicesDetailSection() {
                       <div key={feature} className="flex items-start gap-2">
                         <CheckCircle
                           size={16}
-                          className="text-[#F5C518] mt-0.5 flex-shrink-0"
+                          className="text-[#00E676] mt-0.5 flex-shrink-0"
                         />
                         <span className="text-sm text-gray-600 dark:text-gray-400">
                           {feature}

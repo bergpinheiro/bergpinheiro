@@ -49,30 +49,30 @@ export const SERVICES = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Carlos Mendes",
+    name: "Wilmar Alves",
     role: "CEO",
-    company: "TechFlow Solutions",
+    company: "Inflatex Balões",
     content:
-      "A Weblooks transformou completamente nosso processo de atendimento. O chatbot do WhatsApp reduziu nosso tempo de resposta em 80%.",
-    avatar: "CM",
+      "O W Multi Channel revolucionou o nosso atendimento. Antes, perdíamos clientes por demora nas respostas. Hoje centralizamos WhatsApp, Instagram e e-mail em um só lugar — a equipe ficou muito mais produtiva e o cliente percebe a diferença.",
+    avatar: "WA",
   },
   {
     id: 2,
-    name: "Ana Paula Ferreira",
-    role: "Diretora de Operações",
-    company: "Nexum Group",
+    name: "Ana Paula",
+    role: "CEO",
+    company: "Mega Infláveis",
     content:
-      "Trabalho excepcional! O sistema integrado que desenvolveram nos deu uma visibilidade incrível das nossas operações em tempo real.",
-    avatar: "AF",
+      "Com o W Multi Channel conseguimos organizar todos os canais de atendimento da nossa empresa sem precisar de vários aplicativos abertos. O sistema é intuitivo, rápido e a Weblooks nos deu suporte em todo momento. Recomendo demais!",
+    avatar: "AP",
   },
   {
     id: 3,
-    name: "Ricardo Oliveira",
-    role: "Founder",
-    company: "StartHub",
+    name: "Ariel Pinheiro",
+    role: "CEO",
+    company: "Arballoon",
     content:
-      "Precisávamos de um MVP rápido e com qualidade. A Weblooks entregou além das expectativas, no prazo e com código impecável.",
-    avatar: "RO",
+      "Implementamos o W Multi Channel e a transformação foi imediata. Unificamos todos os nossos canais digitais, conseguimos distribuir atendimentos para a equipe e o tempo de resposta caiu pela metade. A Weblooks entregou exatamente o que prometeu.",
+    avatar: "AP",
   },
 ];
 
