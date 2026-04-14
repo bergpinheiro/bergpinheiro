@@ -12,14 +12,14 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Berg Pinheiro — Dev Full Stack",
+    default: "Berg Pinheiro — Dev",
     template: "%s | Berg Pinheiro",
   },
   description:
-    "Portfólio de Berg Pinheiro, Dev Full Stack especializado em Next.js, React, Node.js, integrações e automações. Fundador da Weblooks.",
+    "Portfólio de Berg Pinheiro, Dev especializado em Next.js, React, Node.js, integrações e automações. Fundador da Weblooks.",
   keywords: [
     "Berg Pinheiro",
-    "Dev Full Stack",
+    "Dev",
     "desenvolvedor web",
     "Next.js",
     "React",
@@ -36,24 +36,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://bergpinheiro.dev",
-    title: "Berg Pinheiro — Dev Full Stack",
+    title: "Berg Pinheiro — Dev",
     description:
-      "Portfólio de Berg Pinheiro — Dev Full Stack, especialista em sistemas web, integrações e automações.",
+      "Portfólio de Berg Pinheiro — Dev, especialista em sistemas web, integrações e automações.",
     siteName: "Berg Pinheiro",
     images: [
       {
         url: "/berg-pinheiro.png",
         width: 800,
         height: 900,
-        alt: "Berg Pinheiro — Dev Full Stack",
+        alt: "Berg Pinheiro — Dev",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Berg Pinheiro — Dev Full Stack",
+    title: "Berg Pinheiro — Dev",
     description:
-      "Portfólio de Berg Pinheiro — Dev Full Stack, especialista em sistemas web, integrações e automações.",
+      "Portfólio de Berg Pinheiro — Dev, especialista em sistemas web, integrações e automações.",
   },
   robots: { index: true, follow: true },
   metadataBase: new URL("https://bergpinheiro.dev"),

@@ -41,7 +41,7 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-white font-bold text-sm">Berg Pinheiro</p>
-                <p className="text-gray-500 text-xs">Dev Full Stack</p>
+                <p className="text-gray-500 text-xs">Dev</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">

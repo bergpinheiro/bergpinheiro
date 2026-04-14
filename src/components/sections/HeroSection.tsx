@@ -51,7 +51,7 @@ export function HeroSection() {
               custom={0.3}
               className="mt-4 text-xl sm:text-2xl font-medium text-gray-500 dark:text-gray-400"
             >
-              Dev Full Stack &amp; Fundador da{" "}
+              Dev &amp; Fundador da{" "}
               <a
                 href="https://weblooks.com.br"
                 target="_blank"
@@ -156,7 +156,7 @@ export function HeroSection() {
               <div className="relative rounded-3xl overflow-hidden border border-[#00E676]/15 shadow-2xl">
                 <Image
                   src="/berg-pinheiro.png"
-                  alt="Berg Pinheiro — Dev Full Stack"
+                  alt="Berg Pinheiro — Dev"
                   width={500}
                   height={600}
                   className="w-full object-cover object-top"

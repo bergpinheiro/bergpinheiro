@@ -90,7 +90,7 @@ export function AboutHero() {
             <div className="relative rounded-3xl overflow-hidden">
               <Image
                 src="/berg-pinheiro.png"
-                alt="Berg Pinheiro — Dev Full Stack"
+                alt="Berg Pinheiro — Dev"
                 width={600}
                 height={700}
                 className="w-full object-cover object-top"
@@ -112,7 +112,7 @@ export function AboutHero() {
                 </div>
                 <div>
                   <p className="font-bold text-[#0A0A0A] dark:text-white text-sm">Berg Pinheiro</p>
-                  <p className="text-xs text-gray-500">Fundador & Dev Full Stack</p>
+                  <p className="text-xs text-gray-500">Fundador & Dev</p>
                 </div>
               </div>
             </div>

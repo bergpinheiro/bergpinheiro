@@ -110,7 +110,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-bold text-[#0A0A0A] dark:text-white text-sm">Berg Pinheiro</p>
-                  <p className="text-xs text-gray-500">Dev Full Stack · Weblooks</p>
+                  <p className="text-xs text-gray-500">Dev · Weblooks</p>
                 </div>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">

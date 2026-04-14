@@ -70,7 +70,7 @@ export function DifferentialsSection() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#0A0A0A] dark:text-white">Berg Pinheiro</p>
-                  <p className="text-xs text-gray-500">Dev Full Stack · Fundador, Weblooks</p>
+                  <p className="text-xs text-gray-500">Dev · Fundador, Weblooks</p>
                 </div>
               </footer>
             </div>

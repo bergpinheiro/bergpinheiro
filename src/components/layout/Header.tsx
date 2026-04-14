@@ -52,7 +52,7 @@ export function Header() {
                 Berg Pinheiro
               </span>
               <span className="text-[10px] text-gray-500 font-medium tracking-wide">
-                Dev Full Stack
+                Dev
               </span>
             </div>
           </Link>
