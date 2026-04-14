@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { MapPin, Code2, Coffee } from "lucide-react";
+import { MapPin, Code2, Coffee, ExternalLink } from "lucide-react";
 
 export function AboutHero() {
   return (
@@ -12,27 +12,32 @@ export function AboutHero() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
-              Sobre a Weblooks
+              Sobre mim
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-[#0A0A0A] dark:text-white leading-tight">
-              Tecnologia com{" "}
-              <span className="gradient-text">propósito e precisão</span>
+              Dev com paixão por{" "}
+              <span className="gradient-text">resolver problemas</span>
             </h1>
             <p className="mt-6 text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
-              A Weblooks nasceu da paixão por criar soluções digitais que realmente
-              funcionam. Com foco em qualidade, performance e resultados mensuráveis,
-              ajudamos empresas a crescerem no ambiente digital.
+              Sou Berg Pinheiro, desenvolvedor Full Stack com mais de 5 anos de
+              experiência criando soluções digitais que realmente funcionam. Sou
+              fundador da <strong className="text-[#00E676]">Weblooks</strong>,
+              empresa focada em desenvolvimento web e automações de alto impacto.
             </p>
             <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
-              Cada projeto é tratado como único. Entendemos profundamente as
-              necessidades do seu negócio antes de escrever a primeira linha de código,
-              garantindo que a solução entregue gere valor real.
+              Tenho obsessão por código limpo, entregas no prazo e projetos que
+              escalam. Do backend ao frontend, das integrações ao deploy — cuido
+              de toda a jornada técnica com atenção ao detalhe e foco em resultado.
+            </p>
+            <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
+              Quando não estou codando, estou estudando novas tecnologias,
+              construindo produtos próprios ou ajudando outros devs a evoluírem.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap gap-3">
               {[
                 { icon: MapPin, text: "Fortaleza, CE — Brasil" },
                 { icon: Code2, text: "+50 projetos entregues" },
@@ -47,18 +52,45 @@ export function AboutHero() {
                 </div>
               ))}
             </div>
+
+            <div className="mt-8 flex gap-4">
+              <a
+                href="https://github.com/bergpinheiro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-[#00E676] transition-colors"
+              >
+                <ExternalLink size={14} /> GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/bergpinheiro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-[#00E676] transition-colors"
+              >
+                <ExternalLink size={14} /> LinkedIn
+              </a>
+              <a
+                href="https://weblooks.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-[#00E676] transition-colors"
+              >
+                <ExternalLink size={14} /> Weblooks
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#00E676]/10 to-transparent">
+            <div className="relative rounded-3xl overflow-hidden">
               <Image
                 src="/berg-pinheiro.png"
-                alt="Berg Pinheiro — Fundador da Weblooks"
+                alt="Berg Pinheiro — Dev Full Stack"
                 width={600}
                 height={700}
                 className="w-full object-cover object-top"

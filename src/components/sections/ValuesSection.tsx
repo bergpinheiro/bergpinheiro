@@ -1,36 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Eye, Target, Heart } from "lucide-react";
+import { STACK } from "@/lib/constants";
 
-const VALUES = [
+const JOURNEY = [
   {
-    icon: Target,
-    title: "Missão",
-    description:
-      "Desenvolver soluções digitais de alta qualidade que transformem a operação e os resultados dos nossos clientes, entregando tecnologia acessível e eficiente.",
-    color: "from-[#00E676]/20 to-[#00E676]/5",
+    year: "2018",
+    title: "Primeiros passos",
+    description: "Início da jornada no desenvolvimento web com HTML, CSS e JavaScript. Primeiros projetos freelancer.",
   },
   {
-    icon: Eye,
-    title: "Visão",
-    description:
-      "Ser referência em desenvolvimento web e automações no Nordeste brasileiro, reconhecidos pela excelência técnica, ética e compromisso com o cliente.",
-    color: "from-blue-500/20 to-blue-500/5",
+    year: "2020",
+    title: "Stack moderna",
+    description: "Transição para React e Node.js. Especialização em APIs REST e bancos de dados relacionais.",
   },
   {
-    icon: Heart,
-    title: "Valores",
-    description:
-      "Transparência na comunicação, comprometimento com prazos, qualidade inegociável e foco genuíno no sucesso do projeto de cada cliente.",
-    color: "from-purple-500/20 to-purple-500/5",
+    year: "2022",
+    title: "Fundação da Weblooks",
+    description: "Criação da Weblooks para atender demandas de sistemas web e automações com foco em resultado.",
   },
-];
-
-const STACK = [
-  "Next.js", "React", "TypeScript", "Node.js",
-  "PostgreSQL", "MongoDB", "Docker", "AWS",
-  "Tailwind CSS", "Prisma", "GraphQL", "Vercel",
+  {
+    year: "2024",
+    title: "W Multi Channel",
+    description: "Lançamento do W Multi Channel, sistema de atendimento multicanal desenvolvido do zero.",
+  },
+  {
+    year: "Hoje",
+    title: "Full Stack & Produtos",
+    description: "Construindo produtos próprios e atendendo clientes com tecnologia de ponta e suporte dedicado.",
+  },
 ];
 
 export function ValuesSection() {
@@ -42,40 +40,37 @@ export function ValuesSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0A0A0A] dark:text-white">
-              Missão, Visão e Valores
+            <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">Trajetória</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#0A0A0A] dark:text-white">
+              Como cheguei até aqui
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {VALUES.map((item, i) => {
-              const Icon = item.icon;
-              return (
+          <div className="relative max-w-2xl mx-auto">
+            <div className="absolute left-[18px] top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-800" />
+            <div className="space-y-8">
+              {JOURNEY.map((item, i) => (
                 <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  key={item.year}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.12 }}
-                  className="bg-white dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-2xl p-8"
+                  transition={{ delay: i * 0.1 }}
+                  className="flex gap-6"
                 >
-                  <div
-                    className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-5`}
-                  >
-                    <Icon size={22} className="text-[#0A0A0A] dark:text-white" />
+                  <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#00E676]/10 border-2 border-[#00E676] flex items-center justify-center z-10">
+                    <div className="w-2 h-2 rounded-full bg-[#00E676]" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#0A0A0A] dark:text-white mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
+                  <div className="pb-2">
+                    <span className="text-[#00E676] text-xs font-bold uppercase tracking-widest">{item.year}</span>
+                    <h3 className="text-base font-bold text-[#0A0A0A] dark:text-white mt-0.5">{item.title}</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">{item.description}</p>
+                  </div>
                 </motion.div>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -88,11 +83,9 @@ export function ValuesSection() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
-              Tech Stack
-            </span>
+            <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">Tech Stack</span>
             <h2 className="mt-3 text-3xl font-bold text-[#0A0A0A] dark:text-white">
-              Tecnologias que dominamos
+              Ferramentas que domino
             </h2>
           </motion.div>
 
@@ -103,16 +96,21 @@ export function ValuesSection() {
             className="flex flex-wrap justify-center gap-3"
           >
             {STACK.map((tech, i) => (
-              <motion.span
-                key={tech}
+              <motion.div
+                key={tech.name}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                className="bg-gray-50 dark:bg-[#111111] border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-5 py-2.5 rounded-full hover:border-[#00E676]/50 hover:text-[#00E676] transition-colors"
+                transition={{ delay: i * 0.04 }}
+                className="group flex flex-col items-center gap-1 bg-gray-50 dark:bg-[#111111] border border-gray-200 dark:border-gray-700 rounded-xl px-5 py-3 hover:border-[#00E676]/50 transition-colors"
               >
-                {tech}
-              </motion.span>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 group-hover:text-[#00E676] transition-colors">
+                  {tech.name}
+                </span>
+                <span className="text-[10px] text-gray-400 uppercase tracking-wide">
+                  {tech.category}
+                </span>
+              </motion.div>
             ))}
           </motion.div>
         </div>

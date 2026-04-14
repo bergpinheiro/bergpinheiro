@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Zap, MessageCircle, Server, ArrowRight } from "lucide-react";
+import { Monitor, Server, Zap, Cloud, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { SERVICES } from "@/lib/constants";
+import { SKILLS } from "@/lib/constants";
 
-const ICONS = { Monitor, Zap, MessageCircle, Server };
+const ICONS = { Monitor, Server, Zap, Cloud };
 
 const containerVariants = {
   hidden: {},
@@ -19,7 +19,7 @@ const cardVariants = {
 
 export function ServicesSection() {
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-gray-50 dark:bg-[#0D0D0D]">
+    <section id="habilidades" className="py-24 lg:py-32 bg-gray-50 dark:bg-[#0D0D0D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -29,15 +29,14 @@ export function ServicesSection() {
           className="text-center mb-16"
         >
           <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
-            O que fazemos
+            O que faço
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A0A0A] dark:text-white">
-            Serviços que impulsionam{" "}
-            <span className="gradient-text">seu negócio</span>
+            Habilidades &{" "}
+            <span className="gradient-text">especialidades</span>
           </h2>
           <p className="mt-4 text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
-            Do planejamento à produção, cuidamos de toda a jornada técnica da
-            sua solução digital.
+            Do frontend ao deploy — cuido de toda a jornada técnica com atenção ao detalhe.
           </p>
         </motion.div>
 
@@ -48,11 +47,11 @@ export function ServicesSection() {
           viewport={{ once: true, margin: "-80px" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {SERVICES.map((service) => {
-            const Icon = ICONS[service.icon as keyof typeof ICONS];
+          {SKILLS.map((skill) => {
+            const Icon = ICONS[skill.icon as keyof typeof ICONS];
             return (
               <motion.div
-                key={service.id}
+                key={skill.id}
                 variants={cardVariants}
                 className="group relative bg-white dark:bg-[#111111] border border-gray-100 dark:border-gray-800 rounded-2xl p-8 card-hover"
               >
@@ -62,13 +61,13 @@ export function ServicesSection() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-bold text-[#0A0A0A] dark:text-white mb-2">
-                      {service.title}
+                      {skill.title}
                     </h3>
                     <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-5">
-                      {service.description}
+                      {skill.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {service.features.map((feature) => (
+                      {skill.features.map((feature) => (
                         <span
                           key={feature}
                           className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full"
@@ -95,7 +94,7 @@ export function ServicesSection() {
             href="/servicos"
             className="inline-flex items-center gap-2 text-[#00E676] font-semibold hover:gap-3 transition-all"
           >
-            Ver todos os serviços <ArrowRight size={16} />
+            Ver detalhes completos <ArrowRight size={16} />
           </Link>
         </motion.div>
       </div>

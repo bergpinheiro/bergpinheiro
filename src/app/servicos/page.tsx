@@ -3,9 +3,9 @@ import { ServicesDetailSection } from "@/components/sections/ServicesDetailSecti
 import { CtaSection } from "@/components/sections/CtaSection";
 
 export const metadata: Metadata = {
-  title: "Serviços",
+  title: "Habilidades",
   description:
-    "Conheça todos os serviços da Weblooks: desenvolvimento web, integrações, soluções WhatsApp e infraestrutura cloud.",
+    "Conheça as habilidades e especialidades de Berg Pinheiro: frontend, backend, integrações, automações e DevOps.",
 };
 
 export default function ServicosPage() {

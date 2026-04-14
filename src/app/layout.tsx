@@ -12,53 +12,51 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Weblooks | Desenvolvimento Web e Soluções Digitais",
-    template: "%s | Weblooks",
+    default: "Berg Pinheiro — Dev Full Stack",
+    template: "%s | Berg Pinheiro",
   },
   description:
-    "Transformamos ideias em soluções digitais de alta performance. Desenvolvimento de sistemas web, integrações, automações e infraestrutura para o seu negócio.",
+    "Portfólio de Berg Pinheiro, Dev Full Stack especializado em Next.js, React, Node.js, integrações e automações. Fundador da Weblooks.",
   keywords: [
-    "desenvolvimento web",
-    "sistemas web",
+    "Berg Pinheiro",
+    "Dev Full Stack",
+    "desenvolvedor web",
     "Next.js",
     "React",
     "TypeScript",
-    "API",
-    "automação",
-    "WhatsApp Business",
+    "Node.js",
     "Weblooks",
-    "Berg Pinheiro",
+    "Fortaleza",
+    "portfólio",
+    "freelancer",
   ],
-  authors: [{ name: "Berg Pinheiro", url: "https://weblooks.com.br" }],
-  creator: "Weblooks",
+  authors: [{ name: "Berg Pinheiro", url: "https://github.com/bergpinheiro" }],
+  creator: "Berg Pinheiro",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://weblooks.com.br",
-    title: "Weblooks | Desenvolvimento Web e Soluções Digitais",
+    url: "https://bergpinheiro.dev",
+    title: "Berg Pinheiro — Dev Full Stack",
     description:
-      "Transformamos ideias em soluções digitais de alta performance.",
-    siteName: "Weblooks",
+      "Portfólio de Berg Pinheiro — Dev Full Stack, especialista em sistemas web, integrações e automações.",
+    siteName: "Berg Pinheiro",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Weblooks - Soluções Digitais",
+        url: "/berg-pinheiro.png",
+        width: 800,
+        height: 900,
+        alt: "Berg Pinheiro — Dev Full Stack",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Weblooks | Desenvolvimento Web e Soluções Digitais",
+    title: "Berg Pinheiro — Dev Full Stack",
     description:
-      "Transformamos ideias em soluções digitais de alta performance.",
+      "Portfólio de Berg Pinheiro — Dev Full Stack, especialista em sistemas web, integrações e automações.",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  metadataBase: new URL("https://weblooks.com.br"),
+  robots: { index: true, follow: true },
+  metadataBase: new URL("https://bergpinheiro.dev"),
 };
 
 export default function RootLayout({

@@ -3,14 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  MessageCircle,
-  Mail,
-  MapPin,
-  Send,
-  CheckCircle,
-  ArrowRight,
-} from "lucide-react";
+import { MessageCircle, Mail, MapPin, Send, CheckCircle, ArrowRight } from "lucide-react";
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from "@/lib/constants";
 
 export function ContactSection() {
@@ -25,7 +18,7 @@ export function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = encodeURIComponent(
-      `Olá! Me chamo ${formState.name}.\n\nEmail: ${formState.email}\nTelefone: ${formState.phone || "—"}\n\nMensagem: ${formState.message}`
+      `Olá, Berg! Me chamo ${formState.name}.\n\nEmail: ${formState.email}\nTelefone: ${formState.phone || "—"}\n\nMensagem: ${formState.message}`
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
     setSubmitted(true);
@@ -41,14 +34,15 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <span className="text-[#00E676] font-semibold text-sm tracking-widest uppercase">
-            Entre em contato
+            Contato
           </span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-[#0A0A0A] dark:text-white">
-            Vamos conversar sobre{" "}
-            <span className="gradient-text">seu projeto</span>
+            Vamos trabalhar{" "}
+            <span className="gradient-text">juntos?</span>
           </h1>
           <p className="mt-4 text-gray-500 dark:text-gray-400 max-w-xl mx-auto text-lg">
-            Respondo em menos de 24 horas. Sem burocracia, só resultado.
+            Tem um projeto, uma ideia ou só quer bater um papo sobre tecnologia?
+            Manda mensagem — respondo rápido.
           </p>
         </motion.div>
 
@@ -86,7 +80,7 @@ export function ContactSection() {
                   <Mail size={22} className="text-[#00E676]" />
                 </div>
                 <div>
-                  <p className="font-semibold mb-1">Email</p>
+                  <p className="font-semibold mb-1">E-mail</p>
                   <p className="text-gray-400 text-sm">lindenberg@weblooks.com.br</p>
                 </div>
               </a>
@@ -116,12 +110,12 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-bold text-[#0A0A0A] dark:text-white text-sm">Berg Pinheiro</p>
-                  <p className="text-xs text-gray-500">Fundador & Dev Full Stack</p>
+                  <p className="text-xs text-gray-500">Dev Full Stack · Weblooks</p>
                 </div>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                Fico feliz em conversar sobre o seu projeto, tirar dúvidas técnicas e
-                ajudar a encontrar a melhor solução para o seu negócio.
+                Fico feliz em conversar sobre projetos, tirar dúvidas técnicas ou
+                simplesmente bater um papo sobre tecnologia e negócios.
               </p>
             </div>
           </motion.div>
@@ -138,11 +132,9 @@ export function ContactSection() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
                     <CheckCircle size={32} className="text-green-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#0A0A0A] dark:text-white mb-2">
-                    Mensagem enviada!
-                  </h3>
+                  <h3 className="text-xl font-bold text-[#0A0A0A] dark:text-white mb-2">Mensagem enviada!</h3>
                   <p className="text-gray-500 dark:text-gray-400 text-sm max-w-xs">
-                    Sua mensagem foi redirecionada para o WhatsApp. Responderei em breve!
+                    Você foi redirecionado para o WhatsApp. Responderei em breve!
                   </p>
                   <button
                     onClick={() => {
@@ -158,81 +150,58 @@ export function ContactSection() {
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                        Nome *
-                      </label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nome *</label>
                       <input
                         type="text"
                         required
                         value={formState.name}
-                        onChange={(e) =>
-                          setFormState({ ...formState, name: e.target.value })
-                        }
-                        placeholder="Seu nome completo"
+                        onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                        placeholder="Seu nome"
                         className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                        Email *
-                      </label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email *</label>
                       <input
                         type="email"
                         required
                         value={formState.email}
-                        onChange={(e) =>
-                          setFormState({ ...formState, email: e.target.value })
-                        }
+                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                         placeholder="seu@email.com"
                         className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors"
                       />
                     </div>
                   </div>
-
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      WhatsApp / Telefone
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">WhatsApp / Telefone</label>
                     <input
                       type="tel"
                       value={formState.phone}
-                      onChange={(e) =>
-                        setFormState({ ...formState, phone: e.target.value })
-                      }
+                      onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
                       placeholder="+55 85 99999-9999"
                       className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors"
                     />
                   </div>
-
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Mensagem *
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Mensagem *</label>
                     <textarea
                       required
                       rows={5}
                       value={formState.message}
-                      onChange={(e) =>
-                        setFormState({ ...formState, message: e.target.value })
-                      }
-                      placeholder="Conte sobre seu projeto ou necessidade..."
+                      onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                      placeholder="Conta sobre seu projeto ou ideia..."
                       className="w-full bg-white dark:bg-[#0A0A0A] border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-[#00E676] focus:ring-1 focus:ring-[#00E676] transition-colors resize-none"
                     />
                   </div>
-
                   <button
                     type="submit"
                     className="w-full group flex items-center justify-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-95"
                   >
                     Enviar pelo WhatsApp
-                    <Send
-                      size={18}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
+                    <Send size={18} className="transition-transform group-hover:translate-x-1" />
                   </button>
-
                   <p className="text-center text-xs text-gray-400">
-                    Ao enviar, você será redirecionado para o WhatsApp
+                    Você será redirecionado para o WhatsApp com a mensagem formatada
                   </p>
                 </form>
               )}

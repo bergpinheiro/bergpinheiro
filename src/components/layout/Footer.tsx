@@ -21,16 +21,6 @@ function LinkedInIcon() {
   );
 }
 
-function InstagramIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-  );
-}
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -39,16 +29,24 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
-            <Image
-              src="/weblooks-logo.png"
-              alt="Weblooks"
-              width={140}
-              height={40}
-              className="h-8 w-auto object-contain brightness-[10] mb-4"
-            />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#00E676]/30">
+                <Image
+                  src="/berg-pinheiro.png"
+                  alt="Berg Pinheiro"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div>
+                <p className="text-white font-bold text-sm">Berg Pinheiro</p>
+                <p className="text-gray-500 text-xs">Dev Full Stack</p>
+              </div>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Transformamos ideias em soluções digitais de alta performance.
-              Desenvolvimento web, integrações e automações para o seu negócio crescer.
+              Transformo ideias em produtos digitais robustos e escaláveis.
+              Fundador da Weblooks — tecnologia com propósito.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a
@@ -68,15 +66,6 @@ export function Footer() {
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon />
-              </a>
-              <a
-                href="https://instagram.com/weblooks"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-[#00E676] transition-colors"
-                aria-label="Instagram"
-              >
-                <InstagramIcon />
               </a>
               <a
                 href="mailto:lindenberg@weblooks.com.br"
@@ -128,8 +117,15 @@ export function Footer() {
                 </a>
               </li>
               <li className="text-sm">
-                <span className="block text-gray-500 text-xs mb-1">Dev</span>
-                <span>Berg Pinheiro</span>
+                <span className="block text-gray-500 text-xs mb-1">Empresa</span>
+                <a
+                  href="https://weblooks.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#00E676] transition-colors"
+                >
+                  weblooks.com.br
+                </a>
               </li>
             </ul>
           </div>
@@ -137,12 +133,10 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-600">
-            © {currentYear} Weblooks. Todos os direitos reservados.
+            © {currentYear} Berg Pinheiro. Todos os direitos reservados.
           </p>
           <p className="text-xs text-gray-600">
-            Feito com{" "}
-            <span className="text-[#00E676]">♥</span>
-            {" "}por Berg Pinheiro
+            Feito com <span className="text-[#00E676]">♥</span> e muito Next.js
           </p>
         </div>
       </div>

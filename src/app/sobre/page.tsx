@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { AboutHero } from "@/components/sections/AboutHero";
 import { ValuesSection } from "@/components/sections/ValuesSection";
 import { CtaSection } from "@/components/sections/CtaSection";
@@ -7,7 +6,7 @@ import { CtaSection } from "@/components/sections/CtaSection";
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Conheça a Weblooks, empresa de tecnologia liderada por Berg Pinheiro, especializada em desenvolvimento web e soluções digitais.",
+    "Conheça Berg Pinheiro — Dev Full Stack e fundador da Weblooks, especialista em Next.js, Node.js, integrações e automações.",
 };
 
 export default function SobrePage() {

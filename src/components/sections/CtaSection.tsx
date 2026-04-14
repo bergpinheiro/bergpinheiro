@@ -21,18 +21,17 @@ export function CtaSection() {
         >
           <span className="inline-flex items-center gap-2 bg-[#00E676]/10 border border-[#00E676]/20 text-[#00E676] text-xs font-semibold px-4 py-2 rounded-full mb-8 tracking-wide uppercase">
             <MessageCircle size={12} />
-            Pronto para começar?
+            Vamos trabalhar juntos?
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight">
-            Vamos transformar{" "}
-            <span className="gradient-text">sua ideia</span>
-            {" "}em realidade
+            Tem um projeto em{" "}
+            <span className="gradient-text">mente?</span>
           </h2>
 
           <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Entre em contato agora e descubra como a Weblooks pode acelerar o
-            crescimento do seu negócio com tecnologia de ponta.
+            Seja um sistema web do zero, uma integração complexa ou uma automação
+            que vai mudar seu dia a dia — me conta e a gente faz acontecer.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -40,18 +39,21 @@ export function CtaSection() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 active:scale-95 shadow-lg shadow-yellow-500/20"
+              className="group inline-flex items-center gap-2 bg-[#00E676] hover:bg-[#00C853] text-[#0A0A0A] font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg shadow-green-500/20"
             >
-              Falar no WhatsApp agora
-              <ArrowRight
-                size={18}
-                className="transition-transform group-hover:translate-x-1"
-              />
+              Falar no WhatsApp
+              <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+            </a>
+            <a
+              href="mailto:lindenberg@weblooks.com.br"
+              className="inline-flex items-center gap-2 text-gray-400 hover:text-white font-medium text-base px-6 py-4 rounded-full border border-gray-700 hover:border-gray-500 transition-all"
+            >
+              Enviar e-mail
             </a>
           </div>
 
           <p className="mt-6 text-gray-600 text-sm">
-            Resposta rápida · Sem compromisso · 100% gratuito
+            Resposta rápida · Sem compromisso · 100% transparente
           </p>
         </motion.div>
       </div>
