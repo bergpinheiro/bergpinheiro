@@ -109,7 +109,7 @@ export function HeroSection() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/bergpinheiro"
+                href="https://www.linkedin.com/in/berg-pinheiro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-500 hover:text-[#00E676] transition-colors text-sm"

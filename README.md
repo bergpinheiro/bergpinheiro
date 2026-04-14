@@ -5,7 +5,7 @@
 ### Dev · Fundador da [Weblooks](https://weblooks.com.br)
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5585991203123)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bergpinheiro)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/berg-pinheiro/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lindenberg@weblooks.com.br)
 [![Weblooks](https://img.shields.io/badge/Weblooks-00E676?style=for-the-badge&logo=vercel&logoColor=black)](https://weblooks.com.br)
 
@@ -46,18 +46,6 @@
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-![Berg's GitHub Stats](https://github-readme-stats.vercel.app/api?username=bergpinheiro&show_icons=true&theme=dark&hide_border=true&bg_color=0A0A0A&title_color=00E676&icon_color=00E676&text_color=ffffff)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=bergpinheiro&layout=compact&theme=dark&hide_border=true&bg_color=0A0A0A&title_color=00E676&text_color=ffffff)
-
-</div>
 
 ---
 

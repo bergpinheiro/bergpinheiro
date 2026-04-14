@@ -63,7 +63,7 @@ export function AboutHero() {
                 <ExternalLink size={14} /> GitHub
               </a>
               <a
-                href="https://linkedin.com/in/bergpinheiro"
+                href="https://www.linkedin.com/in/berg-pinheiro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-[#00E676] transition-colors"

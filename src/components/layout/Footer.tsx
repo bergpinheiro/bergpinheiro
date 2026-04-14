@@ -59,7 +59,7 @@ export function Footer() {
                 <GithubIcon />
               </a>
               <a
-                href="https://linkedin.com/in/bergpinheiro"
+                href="https://www.linkedin.com/in/berg-pinheiro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#00E676] transition-colors"
